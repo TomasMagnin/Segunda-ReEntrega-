@@ -1,0 +1,603 @@
+
+/* ------------------------------------ Reseteamos los valores por Default del Navegador ----------------------------- */
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+
+
+
+:root{
+    --clr-fondo: blueviolet;
+    --clr-font: whitesmoke;
+    --clr-card-back: #203239;
+}
+
+
+
+/* ------------------------------------ Header ----------------------------------------------------------------------- */
+
+/*------------------------------------------- Titulo, Imagen ----------------------------------------------------------*/
+
+.header-Titulo-Imagen{
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to left, blueviolet, #4F24AB, #4F24AB, orange );
+}
+
+.header-img img{
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    margin: 10px;
+    animation-name: Logo;
+    animation-duration: 10s;
+    transition-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes Logo{
+    0%{
+        transform: rotateY(90deg);
+        transition-duration: .5s;
+    }    
+    25% {
+        transform: rotateY(90deg);
+        transition-duration: .5s;
+    }
+
+    
+    50% {
+        transform: rotateY(180deg);
+        transition-duration: .5s;
+    }
+
+    75% {
+        transform: rotateY(270deg);
+        transition-duration: .5s;
+    }
+
+    100% {
+        transform: rotateY(360deg);
+        transition-duration: .5s;
+
+    }
+}
+
+/*------------------------------------------- Titulo, Imagen ----------------------------------------------------------*/
+
+
+/* -------------------------------------------- Buscador --------------------------------------------------------------*/
+
+.buscador input{
+    border-radius: 20px;
+    padding: 5px;
+    width: 300px;
+} 
+
+
+.buscador button{
+    background-color: red;
+    color: whitesmoke;
+    border-radius: 15px;
+    width: 100px;
+    height: 35px;   
+    
+}
+
+.buscador button :hover{
+    color: yellow;
+    
+}
+
+
+
+
+/* -------------------------------------------- Fin Buscador ----------------------------------------------------------*/
+
+
+/* -------------------------------------------- Navbar ----------------------------------------------------------------*/
+
+.navbar {
+    background: linear-gradient(to left, blueviolet, #4F24AB, #4F24AB, orange );
+    /* padding de la Nav Serch */
+    --bs-navbar-padding-x: 5px;
+    --bs-navbar-padding-y: 1rem;
+    
+    /* Color de Font Nav */
+    --bs-navbar-color: whitesmoke;
+    
+    /* Hover nav color */
+    --bs-navbar-hover-color: whitesmoke;
+    
+    /* Boton Home  */
+    --bs-navbar-active-color: whitesmoke;
+    
+    /* Subtit Categoria */
+    --bs-navbar-brand-font-size: 1.5rem;
+    --bs-navbar-brand-color: whitesmoke;
+    --bs-navbar-brand-hover-color: whitesmoke;
+     --bs-navbar-nav-link-padding-x: 1rem;
+
+    /* Toggler */
+    --bs-navbar-toggler-padding-y: 0.50rem;
+    --bs-navbar-toggler-padding-x: 0.75rem;
+    --bs-navbar-toggler-font-size: 1.5rem;
+    --bs-navbar-toggler-border-color: whitesmoke;
+    --bs-navbar-toggler-border-radius: 0.4rem;
+    --bs-navbar-toggler-focus-width: 0.35rem;
+    --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+    
+}
+
+.nav-item :hover{
+
+    transform: scale(1.2);
+    background: linear-gradient(to right, red, orange);
+    transition: 3s;
+
+}
+/* ---------------------------------------- Fin Navbar ----------------------------------------------------------------*/
+
+
+/* ------------------------------------------------ Main ------------------------------------------------------------- */
+
+.main{
+
+    background-color: var(--clr-fondo);
+    border: black solid 3px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
+}
+
+.card-Vehículos{
+    grid-area: vh;
+    color: var(--clr-font);
+    background-color: var(--clr-card-back);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.card-Vehículos h3{
+
+    font-size: 2rem;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-Vehículos p{
+
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.card-Tecnología{
+    grid-area: th;
+    color: var(--clr-font);
+    background-color: var(--clr-card-back);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.card-Tecnología h3{
+
+    font-size: 2rem;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-Tecnología p{
+
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.card-Herramientas{
+    grid-area: hr;
+    color: var(--clr-font);
+    background-color: var(--clr-card-back);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-Herramientas h3{
+
+    font-size: 2rem;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-Herramientas p{
+
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.card-Electrodomésticos{
+    grid-area: em;
+    color: var(--clr-font);
+    background-color: var(--clr-card-back);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-Electrodomésticos h3{
+
+    font-size: 2rem;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.card-Electrodomésticos p{
+
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.card-i{
+
+    border: solid whitesmoke 3px;
+    border-radius: 25px;
+    width: 80vw;
+    height: 35vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "1 2 3"
+    "4 5 6";
+    justify-items: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.main img{
+    width: 20vw;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 15px;
+    
+}
+
+.card-i :hover{
+   transform: scale(1.2);
+}
+
+/* ------------------------------------------------- Mapa ------------------------------------------------------------- */
+
+.card-contact{
+    color: var(--clr-font);  
+    background-color: var(--clr-fondo);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card-contact h3{
+
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px;
+    padding: 5px;
+}
+
+.map{
+    width: 98vw;
+    margin: 5px;   
+}
+
+/* ------------------------------------------------ Footer ---------------------------------------------------------- */
+
+.footer{
+
+    border: solid 2px whitesmoke;
+    background-color: var(--clr-card-back);
+    height: 35vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "ft ft ft"
+    "fs1 fs2 fs3"
+    "fp fp fp";
+}
+
+.footer__titulo{
+    grid-area: ft;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.footer__sec-1{
+    grid-area: fs1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.footer__sec-2{
+    grid-area: fs2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center ;
+}
+
+.footer__sec-3{
+    grid-area: fs3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.footer__pie{
+    border: solid 2px orange;
+    grid-area: fp;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.footer h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--clr-font);
+}
+
+.footer p{
+    color: var(--clr-font);
+    text-align: center;
+}
+
+.footer a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.footer li :hover{
+    color: orangered;
+
+}
+/* ----------------------------------------------- Formulario de Contactos ------------------------------------------- */
+
+.section{
+    background-color: var(--clr-card-back);
+    height: 100vh;
+    color: whitesmoke;
+    border-top: var(--clr-card-back) 4px solid;
+}
+
+
+.formulario{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.Titulo-formulario{
+    font-size: 3rem;
+    color: orange;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    padding: auto;
+    margin: 15px;
+    padding: 5px;
+    text-align: center;
+    
+
+
+}
+
+
+.form-input{
+    padding: 15px;
+    margin: 10px;
+    width: 60vw;
+    border: 5px solid whitesmoke;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+
+}
+
+
+.form-input >input{
+    margin-left: 20px;
+    padding-left: 30px;
+    border-radius: 8px;
+    width: 15vw;
+    
+}
+
+
+.form-input >select{
+    margin-left: 20px;
+    padding-left: 30px;
+    border-radius: 8px;
+    width: 15vw;
+    
+}
+
+
+.form-input :active{
+    color: orange;
+}
+
+
+
+
+/* ------------------------------------ Media Querie 420px ----------------------------------------------------------- */
+/* ------------------------------------ Header ----------------------------------------------------------------------- */
+
+ @media screen and (max-width: 420px){
+
+}    
+/* ------------------------------------ Main ----------------------------------------------------------------------- */
+
+@media screen and (max-width: 444px){
+    
+    .card-i{
+
+        height: 70vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas: 
+        "1" 
+        "2" 
+        "3"
+        "4"
+        "5"
+        "6";
+        justify-items: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .main img{
+        margin: 2px;
+        padding: 2px;
+        width: 45vw;
+
+    }
+    .main h3{
+
+        font-size: 1rem;
+        font-weight: 900;
+        text-align: center;
+    }
+    .main p{
+
+        text-align: center;
+        font-size: .6 rem;
+    } 
+
+}
+
+/* ------------------------------------------------- Mapa y Footer ---------------------------------------------------- */
+
+@media screen and (max-width: 444px){
+
+    .mppp h3{
+        font-size: 1rem;
+        font-weight: 900;
+    } 
+    .footer__sec-1 h4{
+        margin-left: 25px;
+    }
+    .footer__pie h4{
+
+        text-align: center;    
+    }
+    .footer h4{
+
+        font-size: .8rem;
+    }
+    .footer a{
+
+        font-size: .7rem;
+    }
+}
+
+
+/* ------------------------------------ Media Querie 768px ----------------------------------------------------------- */
+/* ------------------------------------ Header ----------------------------------------------------------------------- */
+
+@media screen and (min-width: 445px) and (max-width: 768px) {
+
+    
+}
+
+/* ------------------------------------ Main ----------------------------------------------------------------------- */
+
+@media screen and (min-width: 445px) and (max-width: 768px) {
+
+    .card-i{
+
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "1 2" 
+        "3 4"
+        "5 6";
+        justify-items: center;
+        align-items: center;
+        margin: 10px;
+        padding: 10px;
+    }
+    .main img{
+        margin: 2px;
+        padding: 2px;
+        width: 26vw;
+
+    }
+    .main h3{
+
+        font-size: 1.5rem;
+        font-weight: 900;
+        text-align: center;
+    }
+    .main p{
+
+        text-align: center;
+        font-size: .8 rem;
+    }
+    .mppp h3{
+        font-size: 1rem;
+        font-weight: 900;
+    }
+
+/* ------------------------------------ Footer ----------------------------------------------------------------------- */
+
+    .footer h4{
+        font-size: 1.1rem;
+        padding: 5px;
+    }
+
+}
+
+/* ------------------------------------- Fin ----------------------------------------------------------------------- */

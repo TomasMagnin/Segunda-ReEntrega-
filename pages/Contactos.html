@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/icon/Market Online.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Market Online</title>
+</head>
+<body>
+    
+<!-- Inicio de Header -->
+<header>
+
+    <!-- Aplicamos Titulo, Imagen, y Serch  -->
+    <div class="header-Titulo-Imagen">
+        <div>
+            <h1 class="header-h1">Market Online</h1>
+        </div>
+        <div class="header-img ">
+            <img src="../assets/images/Market Online.png" alt="Logo">
+        </div>   
+    </div>
+    <div class="buscador">
+        <form>
+            <input  type="search" placeholder="Buscar">
+            <a class="buscador-icon" href="">
+                     <img src="../assets/icon/magnifying-glass-solid.svg" alt="Buscador">
+            </a>     
+        </form>
+    </div>
+<!-- Fin de Titulo, Imagen, y Serch  -->
+
+<!-- Aplicamos una Navbar con Bootstrap, utilizando un componente de Bootstrap -->
+    <nav class="navbar navbar-expand-lg nv">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <a class="navbar-brand">Categorias</a>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Autos.html">Autos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Motos.html">Motos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/Bicicletas.html">Bicicletas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./QuienesSomos.html">Quienes Somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Contactos.html">Contactos</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--------------------- Fin de la NavBar con Bootstrap ----------------->
+<!------------------ Fin del Header -------------------------------->
+</header>
+    <!-- Inicio de Formulario -->
+    <section class="section">
+        <article>
+            <div>
+                <h3 class="Titulo-formulario">Registrar Usuario</h3>
+            </div>
+            <div>
+                <form  class="formulario" action="">
+                    <div class="formulario_input">
+                        <label  for="Campo Nombre"><b>Ingrese Nombre</b></label>
+                        <input type="text" id="Campo Nombre" value="Ej: Pedro" required>
+                    </div>
+                    <div class="formulario_input">
+                        <label for="Campo Apellido"><b>Ingrese su Apellido</b></label>
+                        <input type="text" id="Campo Apellido" value="EJ: Messi" required>
+                    </div>
+                    <div class="formulario_input">
+                        <label for="Campo Email"><b>Ingrese su Email</b></label>
+                        <input type="email" id="Campo Email" value="Nombre@email.com">
+                    </div>
+                    <div class="formulario_input">
+                        <label for="Campo Celular"><b>Ingrese Su Celular</b></label>
+                        <input type="text" placeholder="Ingrese su Número de Teléfono" value="*54-9-351-5555555">
+                    </div>
+                    <div class="formulario_input">
+                        <label for="Campo Fecha de Nacimiento"><b>Ingrese su Fecha de Nacimiento</b></label>
+                        <input type="date" id="Campo Fecha de Nacimiento" value="18/09/1950">
+                    </div>  
+                    <div class="formulario_input">
+                        <label for="text"><b>Elija su Sexo</b></label>
+                        <select name="text" id="text">
+                            <option value=""></option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Femenino">Femenino</option>
+                        ></select>
+                    </div>
+                    <div class="formulario_input">
+                        <p>Lea los terminos y condiciones y haga clic para aceptar</p>
+                        <label for="Campo Aceptar"><b>Acepto los Términos y Condiciones</b></label>
+                        <input type="checkbox" id="Campo Aceptar"  required  value="1">
+                    </div>
+                    <div class="formulario_input">
+                        <input type="submit">
+                        <input type="reset">
+                    
+                </form>
+            </div>
+        </article>
+    </section>
+    <!-- Fin de Formulario -->
+
+    <!-- Inicio del Footer o Pie de Página -->
+
+    <footer class="footer">
+
+        <div class="footer__titulo">
+            <h4>Market Online</h4>
+        </div>
+        <div class="footer__sec-1">
+            <h4>Redes Sociales</h4>
+            <div>
+                <ul>
+                    <li><a href="">Instagram</a> </li>
+                    <li><a href="">Facebook</a> </li>
+                    <li><a href="">Twitter</a> </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__sec-2">
+            <h4>Quienes Somos</h4>
+            <div>
+                <p>Una empresa lider en ventas, con mas de 50 años en el rubro.</p>
+            </div>
+        </div>
+        <div class="footer__sec-3">
+            <h4>Mi Cuenta</h4>
+            <div>
+                <ul>
+                    <li><a href="">Ingresar</a> </li>
+                    <li><a href="">Vender</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__pie">
+            <h4>Copyright 2022 Tomas Magnin - Todos los Derechos Reservados</h4>
+        </div>
+    </footer>
+
+    <!-- Fin de Footer o Pie de Pagina -->
+<script src="../js/bootstrap.js"></script>
+</body>
+</html>
